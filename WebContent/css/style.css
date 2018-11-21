@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Open sans';
+    src: url('font/OpenSans-Regular-webfont.eot');
+    src: url('font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('font/OpenSans-Regular-webfont.woff') format('woff'),
+         url('font/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body, html {
+	font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+  	color: #7F8C9A;
+  	background : #f1f4f9;
+	background-color: #f1f4f9;
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 15px;
+	background: #000000;
+	color: #ffffff;
+}
+
+header h1 {
+	text-align: center;
+}
+
+header h1 a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header h1 a:hover{
+	color: #1ABC9C;
+	text-decoration: none;
+}
+
+.container {
+	background-color: #ffffff;
+	min-height: 100%;
+	-moz-box-shadow: 0px 0px 5px 0px #c0c0c0;
+	-webkit-box-shadow: 0px 0px 5px 0px #c0c0c0;
+	-o-box-shadow: 0px 0px 5px 0px #c0c0c0;
+	box-shadow: 0px 0px 5px 0px #c0c0c0;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=5);
+}
+
+h1, h2, h3 {
+  	font-weight: normal;
+  	color:#aaa;
+}
+
+h2 {
+  	color: #1ABC9C;
+}
+
+h3 {
+	font-size: 16px;
+	padding: 15px 0;
+}
+
+a.tt{
+	font-size : 14px;
+	color : #1ABC9C;
+	font-style: italic;
+	text-decoration: underline;
+}
+a.tt:hover{
+	color: #00d8ad;
+}
+.center {
+	text-align: center;
+}
+
+aside h3 {
+	text-decoration: underline;
+}
+
+.wrapper {
+	border-left: 1px solid #eee;
+}
+
+#bigWrapper.row {
+	margin: 0 auto;
+}
+
+#uplodForm {
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+#uplodForm  h2, #uplodForm h1 {
+	text-align: center;
+}
+
+.input-file-container {
+  	position: relative;
+  	width: 225px;
+  	margin: 0 auto;
+} 
+.js .input-file-trigger{
+  	display: block;
+  	padding: 14px 45px;
+  	background: #39D2B4;
+  	color: #fff;
+  	font-size: 1em;
+  	transition: all .4s;
+  	cursor: pointer;
+}
+.js .input-file {
+  	position: absolute;
+  	top: 0; left: 0;
+  	width: 225px;
+  	opacity: 0;
+  	padding: 14px 0;
+  	cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  	background: #1c6b5b;
+}
+
+.file-return {
+  	margin: 0;
+}
+.file-return:not(:empty) {
+  	margin: 1em 0;
+}
+.js .file-return {
+  	font-style: italic;
+  	font-size: .9em;
+  	font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+  	content: "Selected file: ";
+  	font-style: normal;
+  	font-weight: normal;
+}
+
+.js button {
+	color: #3f4244;
+	padding: 8px 15px;
+  	font-size: 1em;
+  	transition: all .4s;
+  	cursor: pointer;
+  	background: #e2e2e2;
+  	border : 1px solid #ccc;
+  	border-radius: 5px; 
+}
+.js button:hover, .js button:focus {
+  	background: #d2d2d2;
+  	color: #000000;
+}
+
+.error {
+	color: #ff0000;
+}
+
+ul.subtitleList {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+ul.subtitleList li{
+	margin-bottom: 20px;
+	padding:15px;
+	border-bottom: 1px dashed #eee;
+}
+
+.left {
+	float: left;
+	margin-right: 10px;
+}
+
+.right {
+	float: right;
+	margin-right: 10px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+}
+
+nav, #translateInput {
+  margin: 20px 0;
+  /*display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: space-between;*/
+}
+
+nav:after {
+	content: "";
+	clear: both;
+}
+
+.paddingright10{
+	padding-right: 10px;
+}
+
+textarea {
+	width: 100%;
+	font-size: 12px;
+	color: #7F8C9A;
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #1ABC9C;
+  border-color: #10707f;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #000000; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.btn { 
+  padding: 2px 10px;
+}
+
+ul.archiveList {
+  list-style: square;  
+}
+
+ul.archiveList li a {
+  text-decoration: underline;
+  color: forestgreen ;
+}
+
+label {
+	margin-bottom: 0;
+}
+.margin20 {
+	margin: 20px 0;
+}
+.maringright10{
+	margin-right: 10px;
+}
+.maringright5{
+	margin-right: 5px;
+}
+input#titleInput {
+	color: #1ABC9C;
+	font-size: 22px;
+	width: auto;
+	padding: 2px 3px;
+}
+.transList {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+.transList li { 
+	display: inline;
+	margin-right: 10px;
+}
+.transList a{
+	color : #1ABC9C;
+	font-style: italic;
+	text-decoration: underline;
+}
+.transList a:hover{
+	color: #00d8ad;
+}
+.orange {
+	color : orange;
+}
+#translateLanguageInput:focus, #translateLanguageInput:focus, #translateLanguage:focus {
+	box-shadow: 0 0 5px rgba(255, 0, 0, 1);
+  	border: 1px solid rgba(255, 0, 0, 1);
+}
+a#exportTranslation, a#export, a#exportTranslate {
+    color: white;
+    text-decoration: none;
+}
